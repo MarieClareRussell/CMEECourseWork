@@ -1,0 +1,7 @@
+ls | wc -l ../Data/fasta/*.fasta #Count how many lines are in each file.
+cat ../Data/fasta/*coli.fasta | sed '1d' #Print everything starting from the second line for the E. coli genome
+sed '1d' ../Data/fasta/*coli.fasta | wc -m #Count the sequence length of this genome
+sed '1d' ../Data/fasta/E.coli.fasta | tr -d '\n' | grep -o ATGC | wc -l #Count the matches of a particular sequence ATGC in the genome of E. coli
+sed '1d' ../Data/fasta/E.coli.fasta | tr -d '\n' | grep -o AT | wc -l #Count the matches of a particular sequence AT in the genome of E. coli
+sed '1d' ../Data/fasta/E.coli.fasta | tr -d '\n' | grep -o GC | wc -l #Count the matches of a particular sequence GC in the genome of E. coli
+#The ratio of AT to GC is 312723 divided by 387532, which is 0.807.
