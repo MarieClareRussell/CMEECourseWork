@@ -12,3 +12,4 @@ csvtospace.sh -> Converts a comma separated values
 file into a space separated values file.
 UnixPrac1.txt -> Used echo command to record lines of shell script code 
 used to solve quantitative problems regarding genetic data.
+CompileLaTeX.sh -> converts .tex input into code for LaTeX template
